@@ -1,0 +1,19 @@
+{
+  "name": "gucx-alfred-npm",
+  "version": "1.1.0",
+  "main": "index.js",
+  "author": "顾重 <gucx@dxy.cn>",
+  "license": "MIT",
+  "dependencies": {
+    "alfy": "^1.0.0"
+  },
+  "scripts": {
+    "preuninstall": "alfy-cleanup",
+    "postinstall": "alfy-init",
+    "release": "standard-version && npm publish --registry https://registry.npmjs.org"
+  },
+  "type": "module",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
